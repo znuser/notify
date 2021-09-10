@@ -4,6 +4,8 @@ namespace ZnUser\Notify\Domain\Entities;
 
 use Symfony\Component\Validator\Constraints as Assert;
 use Symfony\Component\Validator\Mapping\ClassMetadata;
+use ZnCore\Base\Enums\StatusEnum;
+use ZnCore\Domain\Constraints\Enum;
 use ZnCore\Domain\Interfaces\Entity\ValidateEntityByMetadataInterface;
 use ZnCore\Domain\Interfaces\Entity\UniqueInterface;
 use ZnCore\Domain\Interfaces\Entity\EntityIdInterface;
@@ -17,7 +19,7 @@ class TypeTransportEntity implements ValidateEntityByMetadataInterface, UniqueIn
 
     private $transportId = null;
 
-    private $statusId = null;
+    private $statusId = StatusEnum::ENABLED;
 
     private $transport = null;
 
@@ -29,6 +31,9 @@ class TypeTransportEntity implements ValidateEntityByMetadataInterface, UniqueIn
         $metadata->addPropertyConstraint('typeId', new Assert\NotBlank);
         $metadata->addPropertyConstraint('transportId', new Assert\NotBlank);
         $metadata->addPropertyConstraint('statusId', new Assert\NotBlank);
+        $metadata->addPropertyConstraint('statusId', new Enum([
+            'class' => StatusEnum::class,
+        ]));
     }
 
     public function unique() : array
