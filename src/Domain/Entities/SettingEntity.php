@@ -5,6 +5,7 @@ namespace ZnUser\Notify\Domain\Entities;
 use ZnBundle\Person\Domain\Entities\ContactTypeEntity;
 use Symfony\Component\Validator\Constraints as Assert;
 use Symfony\Component\Validator\Mapping\ClassMetadata;
+use ZnCore\Domain\Constraints\Boolean;
 use ZnCore\Domain\Interfaces\Entity\EntityIdInterface;
 use ZnCore\Domain\Interfaces\Entity\ValidateEntityByMetadataInterface;
 
@@ -30,9 +31,7 @@ class SettingEntity implements ValidateEntityByMetadataInterface, EntityIdInterf
         $metadata->addPropertyConstraint('userId', new Assert\NotBlank);
         $metadata->addPropertyConstraint('notifyTypeId', new Assert\NotBlank);
         $metadata->addPropertyConstraint('contactTypeId', new Assert\NotBlank);
-        $metadata->addPropertyConstraint('isEnabled', new Assert\Choice([
-            'choices' => [true, false]
-        ]));
+        $metadata->addPropertyConstraint('isEnabled', new Boolean());
     }
 
     public function setId($value): void
