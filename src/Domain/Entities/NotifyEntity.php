@@ -3,6 +3,7 @@
 namespace ZnUser\Notify\Domain\Entities;
 
 use DateTime;
+use ZnCore\Domain\Constraints\Enum;
 use ZnUser\Notify\Domain\Enums\NotifyStatusEnum;
 use Symfony\Component\Validator\Constraints as Assert;
 use Symfony\Component\Validator\Mapping\ClassMetadata;
@@ -48,8 +49,8 @@ class NotifyEntity implements ValidateEntityByMetadataInterface, EntityIdInterfa
     {
         $metadata->addPropertyConstraint('recipientId', new Assert\NotBlank);
         $metadata->addPropertyConstraint('typeId', new Assert\NotBlank);
-        $metadata->addPropertyConstraint('statusId', new Assert\Choice([
-            'choices' => EnumHelper::getValues(NotifyStatusEnum::class)
+        $metadata->addPropertyConstraint('statusId', new Enum([
+            'class' => NotifyStatusEnum::class,
         ]));
         $metadata->addPropertyConstraint('createdAt', new Assert\NotBlank);
     }
