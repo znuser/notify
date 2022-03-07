@@ -6,7 +6,7 @@ use Illuminate\Support\Collection;
 use ZnCore\Base\Enums\StatusEnum;
 use ZnCore\Domain\Helpers\EntityHelper;
 use ZnCore\Domain\Libs\Query;
-use ZnLib\Db\Base\BaseEloquentCrudRepository;
+use ZnDatabase\Eloquent\Domain\Base\BaseEloquentCrudRepository;
 use ZnUser\Notify\Domain\Entities\TransportEntity;
 use ZnUser\Notify\Domain\Entities\TypeTransportEntity;
 use ZnUser\Notify\Domain\Interfaces\Repositories\TransportRepositoryInterface;

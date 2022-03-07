@@ -7,7 +7,7 @@ use ZnUser\Notify\Domain\Interfaces\Repositories\TransportRepositoryInterface;
 use ZnUser\Notify\Domain\Interfaces\Repositories\TypeI18nRepositoryInterface;
 use ZnUser\Notify\Domain\Interfaces\Repositories\TypeRepositoryInterface;
 use ZnCore\Domain\Relations\relations\OneToManyRelation;
-use ZnLib\Db\Base\BaseEloquentCrudRepository;
+use ZnDatabase\Eloquent\Domain\Base\BaseEloquentCrudRepository;
 use ZnUser\Notify\Domain\Interfaces\Repositories\TypeTransportRepositoryInterface;
 
 class TypeRepository extends BaseEloquentCrudRepository implements TypeRepositoryInterface

@@ -4,7 +4,7 @@ namespace ZnUser\Notify\Domain\Repositories\Eloquent;
 
 use ZnUser\Notify\Domain\Entities\TypeI18nEntity;
 use ZnUser\Notify\Domain\Interfaces\Repositories\TypeI18nRepositoryInterface;
-use ZnLib\Db\Base\BaseEloquentCrudRepository;
+use ZnDatabase\Eloquent\Domain\Base\BaseEloquentCrudRepository;
 
 class TypeI18nRepository extends BaseEloquentCrudRepository implements TypeI18nRepositoryInterface
 {

@@ -4,7 +4,7 @@ namespace ZnUser\Notify\Domain\Repositories\Eloquent;
 
 use ZnUser\Notify\Domain\Entities\ActivityEntity;
 use ZnUser\Notify\Domain\Interfaces\Repositories\ActivityRepositoryInterface;
-use ZnLib\Db\Base\BaseEloquentCrudRepository;
+use ZnDatabase\Eloquent\Domain\Base\BaseEloquentCrudRepository;
 
 class ActivityRepository extends BaseEloquentCrudRepository implements ActivityRepositoryInterface
 {

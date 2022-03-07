@@ -4,7 +4,7 @@ namespace ZnUser\Notify\Domain\Repositories\Eloquent;
 
 use ZnUser\Notify\Domain\Entities\NotifyEntity;
 use ZnUser\Notify\Domain\Interfaces\Repositories\HistoryRepositoryInterface;
-use ZnLib\Db\Base\BaseEloquentCrudRepository;
+use ZnDatabase\Eloquent\Domain\Base\BaseEloquentCrudRepository;
 
 class HistoryRepository extends BaseEloquentCrudRepository implements HistoryRepositoryInterface
 {
