@@ -2,7 +2,7 @@
 
 namespace ZnUser\Notify\Domain\Enums\Rbac;
 
-use ZnCore\Base\Interfaces\GetLabelsInterface;
+use ZnCore\Contract\Enum\Interfaces\GetLabelsInterface;
 
 class NotifyMyHistoryPermissionEnum implements GetLabelsInterface
 {

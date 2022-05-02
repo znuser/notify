@@ -6,7 +6,7 @@ use ZnBundle\Person\Domain\Entities\ContactTypeEntity;
 use Symfony\Component\Validator\Constraints as Assert;
 use Symfony\Component\Validator\Mapping\ClassMetadata;
 use ZnCore\Domain\Constraints\Boolean;
-use ZnCore\Domain\Interfaces\Entity\EntityIdInterface;
+use ZnCore\Contract\Domain\Interfaces\Entities\EntityIdInterface;
 use ZnCore\Domain\Interfaces\Entity\ValidateEntityByMetadataInterface;
 
 class SettingEntity implements ValidateEntityByMetadataInterface, EntityIdInterface
