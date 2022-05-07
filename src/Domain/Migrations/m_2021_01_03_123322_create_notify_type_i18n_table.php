@@ -25,19 +25,6 @@ class m_2021_01_03_123322_create_notify_type_i18n_table extends BaseCreateTableM
 
             $this->addForeign($table, 'language_code', 'language', 'code');
             $this->addForeign($table, 'type_id', 'notify_type');
-
-            /*$table
-                ->foreign('language_code')
-                ->references('code')
-                ->on($this->encodeTableName('language'))
-                ->onDelete(ForeignActionEnum::CASCADE)
-                ->onUpdate(ForeignActionEnum::CASCADE);
-            $table
-                ->foreign('type_id')
-                ->references('id')
-                ->on($this->encodeTableName('notify_type'))
-                ->onDelete(ForeignActionEnum::CASCADE)
-                ->onUpdate(ForeignActionEnum::CASCADE);*/
         };
     }
 }

@@ -24,19 +24,6 @@ class m_2021_05_13_055407_create_type_transport_table extends BaseCreateTableMig
 
             $this->addForeign($table, 'type_id', 'notify_type');
             $this->addForeign($table, 'transport_id', 'notify_transport');
-
-            /*$table
-                ->foreign('type_id')
-                ->references('id')
-                ->on($this->encodeTableName('notify_type'))
-                ->onDelete(ForeignActionEnum::CASCADE)
-                ->onUpdate(ForeignActionEnum::CASCADE);
-            $table
-                ->foreign('transport_id')
-                ->references('id')
-                ->on($this->encodeTableName('notify_transport'))
-                ->onDelete(ForeignActionEnum::CASCADE)
-                ->onUpdate(ForeignActionEnum::CASCADE);*/
         };
     }
 }

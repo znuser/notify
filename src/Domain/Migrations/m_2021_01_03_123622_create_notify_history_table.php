@@ -36,19 +36,6 @@ class m_2021_01_03_123622_create_notify_history_table extends BaseCreateTableMig
 
             $this->addForeign($table, 'recipient_id', 'user_identity');
             $this->addForeign($table, 'type_id', 'notify_type');
-
-            /*$table
-                ->foreign('recipient_id')
-                ->references('id')
-                ->on($this->encodeTableName('user_identity'))
-                ->onDelete(ForeignActionEnum::CASCADE)
-                ->onUpdate(ForeignActionEnum::CASCADE);
-            $table
-                ->foreign('type_id')
-                ->references('id')
-                ->on($this->encodeTableName('notify_type'))
-                ->onDelete(ForeignActionEnum::CASCADE)
-                ->onUpdate(ForeignActionEnum::CASCADE);*/
         };
     }
 }

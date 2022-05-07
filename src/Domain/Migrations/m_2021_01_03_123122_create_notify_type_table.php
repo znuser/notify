@@ -29,6 +29,7 @@ class m_2021_01_03_123122_create_notify_type_table extends BaseCreateTableMigrat
             $table->string('icon')->nullable()->comment('Иконка');
 
             $table->unique(['name']);
+
             /*$table
                 ->foreign('recipient_id')
                 ->references('id')

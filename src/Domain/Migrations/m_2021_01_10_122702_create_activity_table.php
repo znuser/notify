@@ -25,19 +25,6 @@ class m_2021_01_10_122702_create_activity_table extends BaseCreateTableMigration
             $table->dateTime('created_at')->comment('Время создания');
 
             $this->addForeign($table, 'user_id', 'user_identity');
-
-            /*$table
-                ->foreign('user_id')
-                ->references('id')
-                ->on($this->encodeTableName('user_identity'))
-                ->onDelete(ForeignActionEnum::CASCADE)
-                ->onUpdate(ForeignActionEnum::CASCADE);*/
-            /*$table
-                ->foreign('type_id')
-                ->references('id')
-                ->on($this->encodeTableName('notify_type'))
-                ->onDelete(ForeignActionEnum::CASCADE)
-                ->onUpdate(ForeignActionEnum::CASCADE);*/
         };
     }
 }
