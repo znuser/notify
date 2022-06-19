@@ -30,12 +30,9 @@ class TransportService extends BaseCrudService implements TransportServiceInterf
 
     public function send(NotifyEntity $notifyEntity)
     {
-
-
-
         $transportCollection = $this->getRepository()->allEnabledByTypeId($notifyEntity->getTypeId());
         foreach ($transportCollection as $transportEntity) {
-            $driverInstance = ClassHelper::createObject($transportEntity->getHandlerClass(), [], ContactDriverInterface::class);
+            $driverInstance = ClassHelper::createObject($transportEntity->getHandlerClass());
             if ($driverInstance instanceof ContactDriverInterface) {
                 $driverInstance->send($notifyEntity);
             } else {
