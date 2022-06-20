@@ -14,7 +14,7 @@ use ZnBundle\Notify\Domain\Interfaces\Repositories\SmsRepositoryInterface;
 use ZnCore\Base\Libs\EntityManager\Interfaces\EntityManagerInterface;
 use ZnCore\Base\Libs\Query\Entities\Query;
 use ZnCore\Base\Libs\EntityManager\Traits\EntityManagerAwareTrait;
-use ZnCore\Domain\Traits\RepositoryAwareTrait;
+use ZnCore\Base\Libs\Repository\Traits\RepositoryAwareTrait;
 
 class HistoryService implements HistoryServiceInterface
 {
