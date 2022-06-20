@@ -7,9 +7,9 @@ use Symfony\Component\Validator\Constraints as Assert;
 use Symfony\Component\Validator\Mapping\ClassMetadata;
 use ZnCore\Domain\Constraints\Boolean;
 use ZnCore\Contract\Domain\Interfaces\Entities\EntityIdInterface;
-use ZnCore\Base\Libs\Entity\Interfaces\ValidateEntityByMetadataInterface;
+use ZnCore\Base\Libs\Validation\Interfaces\ValidationByMetadataInterface;
 
-class SettingEntity implements ValidateEntityByMetadataInterface, EntityIdInterface
+class SettingEntity implements ValidationByMetadataInterface, EntityIdInterface
 {
 
     private $id = null;

@@ -9,14 +9,14 @@ use ZnUser\Notify\Domain\Interfaces\Services\SettingServiceInterface;
 use ZnBundle\User\Domain\Interfaces\Services\AuthServiceInterface;
 use ZnCore\Base\Exceptions\NotFoundException;
 use ZnCore\Domain\Entities\Query\Where;
-use ZnCore\Domain\Interfaces\Libs\EntityManagerInterface;
+use ZnCore\Base\Libs\EntityManager\Interfaces\EntityManagerInterface;
 use ZnCore\Domain\Libs\Query;
-use ZnCore\Domain\Traits\EntityManagerTrait;
+use ZnCore\Base\Libs\EntityManager\Traits\EntityManagerAwareTrait;
 
 class SettingService /*extends BaseCrudService*/ implements SettingServiceInterface
 {
 
-    use EntityManagerTrait;
+    use EntityManagerAwareTrait;
 
     private $authService;
 

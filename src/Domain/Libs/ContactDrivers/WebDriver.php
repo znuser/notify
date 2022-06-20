@@ -4,13 +4,13 @@ namespace ZnUser\Notify\Domain\Libs\ContactDrivers;
 
 use ZnUser\Notify\Domain\Entities\NotifyEntity;
 use ZnUser\Notify\Domain\Interfaces\Libs\ContactDriverInterface;
-use ZnCore\Domain\Interfaces\Libs\EntityManagerInterface;
-use ZnCore\Domain\Traits\EntityManagerTrait;
+use ZnCore\Base\Libs\EntityManager\Interfaces\EntityManagerInterface;
+use ZnCore\Base\Libs\EntityManager\Traits\EntityManagerAwareTrait;
 
 class WebDriver implements ContactDriverInterface
 {
 
-    use EntityManagerTrait;
+    use EntityManagerAwareTrait;
 
     private $em;
 

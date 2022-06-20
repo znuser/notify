@@ -2,10 +2,10 @@
 
 namespace ZnUser\Notify\Domain\Services;
 
-use ZnCore\Domain\Helpers\ValidationHelper;
+use ZnCore\Base\Libs\Validation\Helpers\ValidationHelper;
 use ZnCore\Domain\Interfaces\GetEntityClassInterface;
-use ZnCore\Domain\Interfaces\Libs\EntityManagerInterface;
-use ZnCore\Domain\Traits\EntityManagerTrait;
+use ZnCore\Base\Libs\EntityManager\Interfaces\EntityManagerInterface;
+use ZnCore\Base\Libs\EntityManager\Traits\EntityManagerAwareTrait;
 use ZnUser\Notify\Domain\Entities\NotifyEntity;
 use ZnUser\Notify\Domain\Interfaces\Services\NotifyServiceInterface;
 use ZnUser\Notify\Domain\Interfaces\Services\TransportServiceInterface;
@@ -14,7 +14,7 @@ use ZnUser\Notify\Domain\Interfaces\Services\TypeServiceInterface;
 class NotifyService implements NotifyServiceInterface, GetEntityClassInterface
 {
 
-    use EntityManagerTrait;
+    use EntityManagerAwareTrait;
 
     private $em;
     private $typeService;

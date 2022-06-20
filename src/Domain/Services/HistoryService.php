@@ -11,15 +11,15 @@ use ZnBundle\Notify\Domain\Entities\EmailEntity;
 use ZnBundle\Notify\Domain\Entities\SmsEntity;
 use ZnBundle\Notify\Domain\Interfaces\Repositories\EmailRepositoryInterface;
 use ZnBundle\Notify\Domain\Interfaces\Repositories\SmsRepositoryInterface;
-use ZnCore\Domain\Interfaces\Libs\EntityManagerInterface;
+use ZnCore\Base\Libs\EntityManager\Interfaces\EntityManagerInterface;
 use ZnCore\Domain\Libs\Query;
-use ZnCore\Domain\Traits\EntityManagerTrait;
+use ZnCore\Base\Libs\EntityManager\Traits\EntityManagerAwareTrait;
 use ZnCore\Domain\Traits\RepositoryAwareTrait;
 
 class HistoryService implements HistoryServiceInterface
 {
 
-    use EntityManagerTrait;
+    use EntityManagerAwareTrait;
     use RepositoryAwareTrait;
 
     const SMS_TYPE_ID = 1;
