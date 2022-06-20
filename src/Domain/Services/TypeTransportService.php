@@ -4,7 +4,7 @@ namespace ZnUser\Notify\Domain\Services;
 
 use ZnUser\Notify\Domain\Interfaces\Services\TypeTransportServiceInterface;
 use ZnCore\Base\Libs\EntityManager\Interfaces\EntityManagerInterface;
-use ZnCore\Domain\Base\BaseCrudService;
+use ZnCore\Base\Libs\Service\Base\BaseCrudService;
 use ZnUser\Notify\Domain\Entities\TypeTransportEntity;
 
 class TypeTransportService extends BaseCrudService implements TypeTransportServiceInterface

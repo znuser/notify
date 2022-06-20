@@ -7,7 +7,7 @@ use ZnUser\Notify\Domain\Enums\NotifyStatusEnum;
 use ZnUser\Notify\Domain\Interfaces\Services\MyHistoryServiceInterface;
 use ZnBundle\User\Domain\Interfaces\Services\AuthServiceInterface;
 use ZnCore\Base\Exceptions\NotFoundException;
-use ZnCore\Domain\Base\BaseCrudService;
+use ZnCore\Base\Libs\Service\Base\BaseCrudService;
 use ZnCore\Base\Libs\Query\Entities\Where;
 use ZnCore\Base\Libs\EntityManager\Interfaces\EntityManagerInterface;
 use ZnCore\Base\Libs\Query\Entities\Query;

@@ -2,7 +2,7 @@
 
 namespace ZnUser\Notify\Domain\Services;
 
-use ZnCore\Domain\Base\BaseCrudService;
+use ZnCore\Base\Libs\Service\Base\BaseCrudService;
 use ZnCore\Base\Libs\EntityManager\Interfaces\EntityManagerInterface;
 use ZnCore\Base\Libs\Query\Entities\Query;
 use ZnUser\Notify\Domain\Entities\TypeEntity;
