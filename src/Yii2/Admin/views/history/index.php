@@ -15,7 +15,7 @@ use yii\helpers\Url;
 use yii\web\Request;
 use yii\web\View;
 use ZnCore\Base\Libs\I18Next\Facades\I18Next;
-use ZnCore\Domain\Interfaces\Entity\ValidateEntityByMetadataInterface;
+use ZnCore\Base\Libs\Entity\Interfaces\ValidateEntityByMetadataInterface;
 use ZnCore\Domain\Libs\DataProvider;
 use ZnLib\Web\Widgets\Pagination\PaginationWidget;
 use ZnSandbox\Sandbox\Status\Web\Widgets\FilterWidget;
