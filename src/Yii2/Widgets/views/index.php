@@ -9,7 +9,7 @@
 use yii\helpers\Url;
 use yii\web\View;
 use ZnCore\Base\Libs\I18Next\Facades\I18Next;
-use ZnCore\Domain\Libs\DataProvider;
+use ZnCore\Base\Libs\DataProvider\Libs\DataProvider;
 
 ?>
 

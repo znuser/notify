@@ -5,7 +5,7 @@ namespace ZnUser\Notify\Domain\Repositories\Eloquent;
 use Illuminate\Support\Collection;
 use ZnCore\Base\Enums\StatusEnum;
 use ZnCore\Base\Libs\Entity\Helpers\EntityHelper;
-use ZnCore\Domain\Libs\Query;
+use ZnCore\Base\Libs\Query\Entities\Query;
 use ZnDatabase\Eloquent\Domain\Base\BaseEloquentCrudRepository;
 use ZnUser\Notify\Domain\Entities\TransportEntity;
 use ZnUser\Notify\Domain\Entities\TypeTransportEntity;

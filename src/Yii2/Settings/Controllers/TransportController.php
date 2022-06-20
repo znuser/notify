@@ -16,7 +16,7 @@ use ZnBundle\Notify\Domain\Interfaces\Services\ToastrServiceInterface;
 use ZnBundle\UserSettings\Yii2\Admin\Controllers\BaseSettingsController;
 use ZnCore\Base\Libs\I18Next\Facades\I18Next;
 use ZnCore\Base\Libs\Validation\Exceptions\UnprocessibleEntityException;
-use ZnCore\Domain\Libs\Query;
+use ZnCore\Base\Libs\Query\Entities\Query;
 use ZnLib\Web\Widgets\BreadcrumbWidget;
 use ZnYii\Base\Helpers\FormHelper;
 
