@@ -2,6 +2,7 @@
 
 namespace ZnUser\Notify\Yii2\Admin\Forms;
 
+use ZnCore\Base\Libs\Entity\Helpers\CollectionHelper;
 use ZnUser\Notify\Domain\Interfaces\Repositories\HistoryRepositoryInterface;
 use ZnUser\Notify\Domain\Interfaces\Repositories\TypeRepositoryInterface;
 use ZnBundle\Eav\Domain\Interfaces\Services\EntityServiceInterface;
@@ -61,19 +62,19 @@ class HistoryForm extends BaseForm
     public function historyList(): array
     {
         $collection = $this->historyRepository->all();
-        return EntityHelper::collectionToArray($collection);
+        return CollectionHelper::toArray($collection);
     }
 
     public function typeList(): array
     {
         $collection = $this->typeRepository->all();
-        return EntityHelper::collectionToArray($collection);
+        return CollectionHelper::toArray($collection);
     }
 
     public function entityList(): array
     {
         $query = new Query();
         $collection = $this->entityService->all($query);
-        return EntityHelper::collectionToArray($collection);
+        return CollectionHelper::toArray($collection);
     }
 }

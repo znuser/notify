@@ -3,6 +3,7 @@
 namespace ZnUser\Notify\Domain\Entities;
 
 use DateTime;
+use ZnCore\Base\Libs\Entity\Helpers\CollectionHelper;
 use ZnCore\Base\Libs\Enum\Constraints\Enum;
 use ZnUser\Notify\Domain\Enums\NotifyStatusEnum;
 use Symfony\Component\Validator\Constraints as Assert;
@@ -127,7 +128,7 @@ class NotifyEntity implements ValidationByMetadataInterface, EntityIdInterface
         }
         if ($this->getType()) {
             /** @var TypeI18nEntity[] $i18nCollection */
-            $i18nCollection = EntityHelper::indexingCollection($this->getType()->getI18n(), 'languageCode');
+            $i18nCollection = CollectionHelper::indexing($this->getType()->getI18n(), 'languageCode');
             $i18nEntity = $i18nCollection['ru'];
             return TranslatorHelper::processVariables($i18nEntity->getSubject(), $this->getAttributes());
         }
@@ -145,7 +146,7 @@ class NotifyEntity implements ValidationByMetadataInterface, EntityIdInterface
         }
         if ($this->getType()) {
             /** @var TypeI18nEntity[] $i18nCollection */
-            $i18nCollection = EntityHelper::indexingCollection($this->getType()->getI18n(), 'languageCode');
+            $i18nCollection = CollectionHelper::indexing($this->getType()->getI18n(), 'languageCode');
             $i18nEntity = $i18nCollection['ru'];
             return TranslatorHelper::processVariables($i18nEntity->getContent(), $this->getAttributes());
         }
