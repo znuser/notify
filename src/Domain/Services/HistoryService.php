@@ -38,7 +38,7 @@ class HistoryService implements HistoryServiceInterface
     )
     {
         $this->setEntityManager($em);
-        $repository = $this->getEntityManager()->getRepositoryByEntityClass(NotifyEntity::class);
+        $repository = $this->getEntityManager()->getRepository(NotifyEntity::class);
         $this->setRepository($repository);
 
 //        $this->repository = $repository;
@@ -51,7 +51,7 @@ class HistoryService implements HistoryServiceInterface
     {
 //        ValidationHelper::validateEntity($notifyEntity);
 
-        $typeRepository = $this->getEntityManager()->getRepositoryByEntityClass(TypeEntity::class);
+        $typeRepository = $this->getEntityManager()->getRepository(TypeEntity::class);
 //        $typeRepository = $this->getEntityManager()->getRepositoryByClass(TypeRepositoryInterface::class);
         $query = new Query();
         $query->with(['i18n']);

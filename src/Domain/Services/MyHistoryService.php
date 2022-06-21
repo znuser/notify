@@ -28,7 +28,7 @@ class MyHistoryService extends BaseCrudService implements MyHistoryServiceInterf
     )
     {
         $this->setEntityManager($em);
-        $repository = $this->getEntityManager()->getRepositoryByEntityClass(NotifyEntity::class);
+        $repository = $this->getEntityManager()->getRepository(NotifyEntity::class);
         $this->setRepository($repository);
 
         $this->authService = $authService;
