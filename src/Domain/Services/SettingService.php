@@ -53,7 +53,7 @@ class SettingService /*extends BaseCrudService*/ implements SettingServiceInterf
         $query = new Query();
         $query->whereNew(new Where('user_id', $userId));
         $query->with(['notifyType', 'contactType']);
-        return $this->getEntityManager()->all($this->getEntityClass(), $query);
+        return $this->getEntityManager()->getRepository($this->getEntityClass())->all($query);
     }
 
     public function allByUserAndType(int $userId, int $typeId): Collection {
@@ -61,7 +61,7 @@ class SettingService /*extends BaseCrudService*/ implements SettingServiceInterf
         $query->whereNew(new Where('user_id', $userId));
         $query->whereNew(new Where('notify_type_id', $typeId));
         $query->with(['notifyType', 'contactType']);
-        return $this->getEntityManager()->all($this->getEntityClass(), $query);
+        return $this->getEntityManager()->getRepository($this->getEntityClass())->all($query);
     }
 
     public function getMySettings(): array {
@@ -80,7 +80,7 @@ class SettingService /*extends BaseCrudService*/ implements SettingServiceInterf
                     $query->whereNew(new Where('notify_type_id', $typeId));
                     $query->whereNew(new Where('contact_type_id', $contactTypeId));
                     $query->whereNew(new Where('user_id', $userId));
-                    $settingEntity = $this->getEntityManager()->one($this->getEntityClass(), $query);
+                    $settingEntity = $this->getEntityManager()->getRepository($this->getEntityClass())->one($query);
                 } catch (NotFoundException $e) {
                     $settingEntity = new SettingEntity();
                     $settingEntity->setNotifyTypeId($typeId);

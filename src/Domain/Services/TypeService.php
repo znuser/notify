@@ -27,7 +27,7 @@ class TypeService extends BaseCrudService implements TypeServiceInterface
 //        $query = new Query();
 //        $query->with(['i18n']);
 //        /** @var TypeEntity $typeEntity */
-//        $typeEntity = $this->getEntityManager()->oneById(TypeEntity::class, $id, $query);
+//        $typeEntity = $this->getEntityManager()->getRepository(TypeEntity::class)->oneById($id, $query);
 //        //$transportCollection = $this->transportService->allByTypeId($id);
 //        //$typeEntity->setTransports($transportCollection);
 //        return $typeEntity;
@@ -39,7 +39,7 @@ class TypeService extends BaseCrudService implements TypeServiceInterface
         $query->where('name', $name);
         //$query->with('i18n');
         /** @var TypeEntity $typeEntity */
-        $typeEntity = $this->getEntityManager()->one(TypeEntity::class, $query);
+        $typeEntity = $this->getEntityManager()->getRepository(TypeEntity::class)->one($query);
         return $typeEntity;
     }
 }

@@ -31,7 +31,7 @@ class TransportRepository extends BaseEloquentCrudRepository implements Transpor
         $query->where('type_id', $typeId);
         $query->where('status_id', StatusEnum::ENABLED);
         $query->with('transport');
-        $collectionVia = $this->getEntityManager()->all(TypeTransportEntity::class, $query);
+        $collectionVia = $this->getEntityManager()->getRepository(TypeTransportEntity::class)->all($query);
         $array = CollectionHelper::getColumn($collectionVia, 'transport');
         return new Collection($array);
     }

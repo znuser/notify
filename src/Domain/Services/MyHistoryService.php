@@ -56,7 +56,7 @@ class MyHistoryService extends BaseCrudService implements MyHistoryServiceInterf
         try {
             /** @var NotifyEntity $entity */
 //            $entity = $this->getRepository()->one($query);
-            $entity = $this->getEntityManager()->one(NotifyEntity::class, $query);
+            $entity = $this->getEntityManager()->getRepository(NotifyEntity::class)->one($query);
         } catch (NotFoundException $e) {
             return;
         }
