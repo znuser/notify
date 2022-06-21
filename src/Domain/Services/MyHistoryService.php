@@ -2,6 +2,7 @@
 
 namespace ZnUser\Notify\Domain\Services;
 
+use ZnCore\Base\Libs\Entity\Interfaces\EntityIdInterface;
 use ZnUser\Notify\Domain\Entities\NotifyEntity;
 use ZnUser\Notify\Domain\Enums\NotifyStatusEnum;
 use ZnUser\Notify\Domain\Interfaces\Services\MyHistoryServiceInterface;
@@ -39,7 +40,7 @@ class MyHistoryService extends BaseCrudService implements MyHistoryServiceInterf
         $this->getRepository()->deleteByCondition(['recipient_id' => $myIdentity->getId()]);
     }
 
-    public function oneById($id, Query $query = null)
+    public function oneById($id, Query $query = null): EntityIdInterface
     {
         $this->seenById($id);
         return parent::oneById($id, $query);
