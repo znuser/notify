@@ -8,10 +8,10 @@ use ZnUser\Notify\Domain\Interfaces\Repositories\SettingRepositoryInterface;
 use ZnUser\Notify\Domain\Interfaces\Services\SettingServiceInterface;
 use ZnBundle\User\Domain\Interfaces\Services\AuthServiceInterface;
 use ZnCore\Base\Exceptions\NotFoundException;
-use ZnCore\Base\Libs\Query\Entities\Where;
-use ZnCore\Base\Libs\EntityManager\Interfaces\EntityManagerInterface;
-use ZnCore\Base\Libs\Query\Entities\Query;
-use ZnCore\Base\Libs\EntityManager\Traits\EntityManagerAwareTrait;
+use ZnCore\Domain\Query\Entities\Where;
+use ZnCore\Domain\EntityManager\Interfaces\EntityManagerInterface;
+use ZnCore\Domain\Query\Entities\Query;
+use ZnCore\Domain\EntityManager\Traits\EntityManagerAwareTrait;
 
 class SettingService /*extends BaseCrudService*/ implements SettingServiceInterface
 {

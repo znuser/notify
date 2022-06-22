@@ -4,7 +4,7 @@ namespace ZnUser\Notify\Domain\Services;
 
 use ZnUser\Notify\Domain\Interfaces\Repositories\TypeI18nRepositoryInterface;
 use ZnUser\Notify\Domain\Interfaces\Services\TypeI18nServiceInterface;
-use ZnCore\Base\Libs\Service\Base\BaseCrudService;
+use ZnCore\Domain\Service\Base\BaseCrudService;
 
 class TypeI18nService extends BaseCrudService implements TypeI18nServiceInterface
 {

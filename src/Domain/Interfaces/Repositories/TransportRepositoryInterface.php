@@ -3,7 +3,7 @@
 namespace ZnUser\Notify\Domain\Interfaces\Repositories;
 
 use Illuminate\Support\Collection;
-use ZnCore\Base\Libs\Repository\Interfaces\CrudRepositoryInterface;
+use ZnCore\Domain\Repository\Interfaces\CrudRepositoryInterface;
 use ZnUser\Notify\Domain\Entities\TransportEntity;
 
 interface TransportRepositoryInterface extends CrudRepositoryInterface

@@ -6,10 +6,10 @@ use ZnUser\Notify\Domain\Entities\ActivityEntity;
 use ZnUser\Notify\Domain\Interfaces\Repositories\ActivityRepositoryInterface;
 use ZnUser\Notify\Domain\Interfaces\Services\ActivityServiceInterface;
 use ZnBundle\User\Domain\Interfaces\Services\AuthServiceInterface;
-use ZnCore\Base\Libs\Service\Base\BaseCrudService;
+use ZnCore\Domain\Service\Base\BaseCrudService;
 use ZnCore\Base\Libs\Validation\Exceptions\UnprocessibleEntityException;
-use ZnCore\Base\Libs\Entity\Helpers\EntityHelper;
-use ZnCore\Base\Libs\Entity\Interfaces\EntityIdInterface;
+use ZnCore\Domain\Entity\Helpers\EntityHelper;
+use ZnCore\Domain\Entity\Interfaces\EntityIdInterface;
 
 class ActivityService extends BaseCrudService implements ActivityServiceInterface
 {

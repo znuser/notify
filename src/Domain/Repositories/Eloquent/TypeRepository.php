@@ -6,7 +6,7 @@ use ZnUser\Notify\Domain\Entities\TypeEntity;
 use ZnUser\Notify\Domain\Interfaces\Repositories\TransportRepositoryInterface;
 use ZnUser\Notify\Domain\Interfaces\Repositories\TypeI18nRepositoryInterface;
 use ZnUser\Notify\Domain\Interfaces\Repositories\TypeRepositoryInterface;
-use ZnCore\Base\Libs\Relation\Libs\Types\OneToManyRelation;
+use ZnCore\Domain\Relation\Libs\Types\OneToManyRelation;
 use ZnDatabase\Eloquent\Domain\Base\BaseEloquentCrudRepository;
 use ZnUser\Notify\Domain\Interfaces\Repositories\TypeTransportRepositoryInterface;
 
