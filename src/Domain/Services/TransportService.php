@@ -2,8 +2,8 @@
 
 namespace ZnUser\Notify\Domain\Services;
 
-use ZnCore\Base\Exceptions\NotInstanceOfException;
-use ZnCore\Base\Helpers\ClassHelper;
+use ZnCore\Base\Libs\Instance\Exceptions\NotInstanceOfException;
+use ZnCore\Base\Libs\Instance\Helpers\ClassHelper;
 use ZnCore\Domain\Service\Base\BaseCrudService;
 use ZnCore\Domain\EntityManager\Interfaces\EntityManagerInterface;
 use ZnUser\Notify\Domain\Entities\NotifyEntity;

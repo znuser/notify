@@ -5,7 +5,7 @@ namespace ZnUser\Notify\Domain\Libs\ContactDrivers;
 use ZnBundle\Notify\Domain\Entities\SmsEntity;
 use ZnBundle\Notify\Domain\Interfaces\Services\SmsServiceInterface;
 use ZnBundle\User\Domain\Interfaces\Services\CredentialServiceInterface;
-use ZnCore\Base\Exceptions\NotFoundException;
+use ZnCore\Domain\Entity\Exceptions\NotFoundException;
 use ZnUser\Notify\Domain\Entities\NotifyEntity;
 use ZnUser\Notify\Domain\Interfaces\Libs\ContactDriverInterface;
 
