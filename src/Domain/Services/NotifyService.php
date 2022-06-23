@@ -2,7 +2,7 @@
 
 namespace ZnUser\Notify\Domain\Services;
 
-use ZnCore\Base\Libs\Validation\Helpers\ValidationHelper;
+use ZnCore\Base\Validation\Helpers\ValidationHelper;
 use ZnCore\Domain\Domain\Interfaces\GetEntityClassInterface;
 use ZnCore\Domain\EntityManager\Interfaces\EntityManagerInterface;
 use ZnCore\Domain\EntityManager\Traits\EntityManagerAwareTrait;

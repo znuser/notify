@@ -2,7 +2,7 @@
 
 namespace ZnUser\Notify\Yii2\Settings\Forms;
 
-use ZnCore\Base\Libs\Arr\Helpers\ArrayHelper;
+use ZnCore\Base\Arr\Helpers\ArrayHelper;
 use ZnYii\Base\Forms\BaseForm;
 
 class TransportForm extends BaseForm

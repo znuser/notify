@@ -9,7 +9,7 @@
 use yii\base\Model;
 use yii\web\Request;
 use yii\web\View;
-use ZnCore\Base\Libs\I18Next\Facades\I18Next;
+use ZnCore\Base\I18Next\Facades\I18Next;
 
 $this->title = I18Next::t('core', 'action.update');
 

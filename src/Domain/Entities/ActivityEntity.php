@@ -6,7 +6,7 @@ use DateTime;
 use Symfony\Component\Validator\Constraints as Assert;
 use Symfony\Component\Validator\Mapping\ClassMetadata;
 use ZnCore\Domain\Entity\Interfaces\EntityIdInterface;
-use ZnCore\Base\Libs\Validation\Interfaces\ValidationByMetadataInterface;
+use ZnCore\Base\Validation\Interfaces\ValidationByMetadataInterface;
 
 class ActivityEntity implements ValidationByMetadataInterface, EntityIdInterface
 {

@@ -12,7 +12,7 @@ use ZnBundle\Person\Domain\Entities\ContactTypeEntity;
 use yii\helpers\Html;
 use yii\web\View;
 use yii\widgets\ActiveForm;
-use ZnCore\Base\Libs\I18Next\Facades\I18Next;
+use ZnCore\Base\I18Next\Facades\I18Next;
 
 $this->title = I18Next::t('notify', 'transport.title');
 

@@ -4,17 +4,17 @@ namespace ZnUser\Notify\Domain\Entities;
 
 use DateTime;
 use ZnCore\Domain\Entity\Helpers\CollectionHelper;
-use ZnCore\Base\Libs\Enum\Constraints\Enum;
+use ZnCore\Base\Enum\Constraints\Enum;
 use ZnUser\Notify\Domain\Enums\NotifyStatusEnum;
 use Symfony\Component\Validator\Constraints as Assert;
 use Symfony\Component\Validator\Mapping\ClassMetadata;
-use ZnCore\Base\Libs\Status\Enums\StatusEnum;
-use ZnCore\Base\Libs\Enum\Helpers\EnumHelper;
-use ZnCore\Base\Libs\Arr\Helpers\ArrayHelper;
-use ZnCore\Base\Libs\I18Next\Helpers\TranslatorHelper;
+use ZnCore\Base\Status\Enums\StatusEnum;
+use ZnCore\Base\Enum\Helpers\EnumHelper;
+use ZnCore\Base\Arr\Helpers\ArrayHelper;
+use ZnCore\Base\I18Next\Helpers\TranslatorHelper;
 use ZnCore\Domain\Entity\Helpers\EntityHelper;
 use ZnCore\Domain\Entity\Interfaces\EntityIdInterface;
-use ZnCore\Base\Libs\Validation\Interfaces\ValidationByMetadataInterface;
+use ZnCore\Base\Validation\Interfaces\ValidationByMetadataInterface;
 
 class NotifyEntity implements ValidationByMetadataInterface, EntityIdInterface
 {

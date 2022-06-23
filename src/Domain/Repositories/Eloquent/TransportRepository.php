@@ -3,7 +3,7 @@
 namespace ZnUser\Notify\Domain\Repositories\Eloquent;
 
 use Illuminate\Support\Collection;
-use ZnCore\Base\Libs\Status\Enums\StatusEnum;
+use ZnCore\Base\Status\Enums\StatusEnum;
 use ZnCore\Domain\Entity\Helpers\CollectionHelper;
 use ZnCore\Domain\Entity\Helpers\EntityHelper;
 use ZnCore\Domain\Query\Entities\Query;
