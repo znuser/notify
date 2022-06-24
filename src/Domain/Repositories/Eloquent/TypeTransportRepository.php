@@ -26,7 +26,7 @@ class TypeTransportRepository extends BaseEloquentCrudRepository implements Type
         return TypeTransportEntity::class;
     }
 
-    public function relations2()
+    public function relations()
     {
         return [
             [

@@ -23,7 +23,7 @@ class TypeRepository extends BaseEloquentCrudRepository implements TypeRepositor
         return TypeEntity::class;
     }
 
-    public function relations2()
+    public function relations()
     {
         return [
             [

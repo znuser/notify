@@ -22,7 +22,7 @@ class SettingRepository extends BaseEloquentCrudRepository implements SettingRep
         return SettingEntity::class;
     }
 
-    public function relations2()
+    public function relations()
     {
         return [
             [
