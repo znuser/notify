@@ -6,7 +6,7 @@ use ZnUser\Notify\Domain\Enums\NotifyStatusEnum;
 use ZnUser\Notify\Domain\Interfaces\Services\MyHistoryServiceInterface;
 use ZnCore\Domain\Query\Entities\Where;
 use ZnCore\Domain\Query\Entities\Query;
-use ZnLib\Web\Components\Widget\Base\BaseWidget2;
+use ZnLib\Web\Widget\Base\BaseWidget2;
 
 class NotifyMenuWidget extends BaseWidget2
 {
