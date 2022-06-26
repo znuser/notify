@@ -17,7 +17,7 @@ use yii\web\View;
 use ZnLib\Components\I18Next\Facades\I18Next;
 use ZnCore\Base\Validation\Interfaces\ValidationByMetadataInterface;
 use ZnCore\Domain\DataProvider\Libs\DataProvider;
-use ZnLib\Web\Widgets\Pagination\PaginationWidget;
+use ZnLib\Web\Components\Widget\Widgets\Pagination\PaginationWidget;
 use ZnSandbox\Sandbox\Status\Web\Widgets\FilterWidget;
 
 $this->title = I18Next::t('notify', 'history.list');
