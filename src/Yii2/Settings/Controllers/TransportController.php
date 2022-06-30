@@ -53,8 +53,8 @@ class TransportController extends BaseSettingsController
     {
         $typeQuery = new Query();
         $typeQuery->with(['i18n']);
-        $typeCollection = $this->typeService->all($typeQuery);
-        $contactTypeCollection = $this->contactTypeService->all();
+        $typeCollection = $this->typeService->findAll($typeQuery);
+        $contactTypeCollection = $this->contactTypeService->findAll();
 //        dd($typeCollection);
         $model = new TransportForm();
         if (Yii::$app->request->isPost) {

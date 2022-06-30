@@ -53,7 +53,7 @@ class SettingService /*extends BaseCrudService*/ implements SettingServiceInterf
         $query = new Query();
         $query->whereNew(new Where('user_id', $userId));
         $query->with(['notifyType', 'contactType']);
-        return $this->getEntityManager()->getRepository($this->getEntityClass())->all($query);
+        return $this->getEntityManager()->getRepository($this->getEntityClass())->findAll($query);
     }
 
     public function allByUserAndType(int $userId, int $typeId): Collection {
@@ -61,7 +61,7 @@ class SettingService /*extends BaseCrudService*/ implements SettingServiceInterf
         $query->whereNew(new Where('user_id', $userId));
         $query->whereNew(new Where('notify_type_id', $typeId));
         $query->with(['notifyType', 'contactType']);
-        return $this->getEntityManager()->getRepository($this->getEntityClass())->all($query);
+        return $this->getEntityManager()->getRepository($this->getEntityClass())->findAll($query);
     }
 
     public function getMySettings(): array {

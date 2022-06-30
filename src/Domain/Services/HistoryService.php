@@ -56,7 +56,7 @@ class HistoryService implements HistoryServiceInterface
         $query = new Query();
         $query->with(['i18n']);
         /** @var TypeEntity $typeEntity */
-        $typeEntity = $typeRepository->oneById($notifyEntity->getTypeId(), $query);
+        $typeEntity = $typeRepository->findOneById($notifyEntity->getTypeId(), $query);
         $notifyEntity->setType($typeEntity);
 
         $this->getEntityManager()->persist($notifyEntity);

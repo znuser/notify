@@ -61,20 +61,20 @@ class HistoryForm extends BaseForm
 
     public function historyList(): array
     {
-        $collection = $this->historyRepository->all();
+        $collection = $this->historyRepository->findAll();
         return CollectionHelper::toArray($collection);
     }
 
     public function typeList(): array
     {
-        $collection = $this->typeRepository->all();
+        $collection = $this->typeRepository->findAll();
         return CollectionHelper::toArray($collection);
     }
 
     public function entityList(): array
     {
         $query = new Query();
-        $collection = $this->entityService->all($query);
+        $collection = $this->entityService->findAll($query);
         return CollectionHelper::toArray($collection);
     }
 }
