@@ -38,7 +38,7 @@ class NotifyService implements NotifyServiceInterface, GetEntityClassInterface
 
     public function sendNotifyByTypeName(string $typeName, int $userId, array $attributes = [])
     {
-        $typeEntity = $this->typeService->oneByName($typeName);
+        $typeEntity = $this->typeService->findOneByName($typeName);
         $this->getEntityManager()->loadEntityRelations($typeEntity, ['i18n']);
         $notifyEntity = $this->getEntityManager()->createEntity(NotifyEntity::class);
 //        $notifyEntity = new NotifyEntity();

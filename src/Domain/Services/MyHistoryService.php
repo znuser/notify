@@ -40,7 +40,7 @@ class MyHistoryService extends BaseCrudService implements MyHistoryServiceInterf
         $this->getRepository()->deleteByCondition(['recipient_id' => $myIdentity->getId()]);
     }
 
-    public function oneById($id, Query $query = null): EntityIdInterface
+    public function findOneById($id, Query $query = null): EntityIdInterface
     {
         $this->seenById($id);
         return parent::findOneById($id, $query);

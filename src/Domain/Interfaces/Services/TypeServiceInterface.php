@@ -9,6 +9,6 @@ interface TypeServiceInterface extends CrudServiceInterface
 {
 
     //public function oneByIdWithI18n(int $id): TypeEntity;
-    public function oneByName(string $name): TypeEntity;
+    public function findOneByName(string $name): TypeEntity;
 }
 

@@ -33,7 +33,7 @@ class TypeService extends BaseCrudService implements TypeServiceInterface
 //        return $typeEntity;
 //    }
 
-    public function oneByName(string $name): TypeEntity
+    public function findOneByName(string $name): TypeEntity
     {
         $query = new Query();
         $query->where('name', $name);
