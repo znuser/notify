@@ -43,7 +43,7 @@ class MyHistoryService extends BaseCrudService implements MyHistoryServiceInterf
     public function oneById($id, Query $query = null): EntityIdInterface
     {
         $this->seenById($id);
-        return parent::oneById($id, $query);
+        return parent::findOneById($id, $query);
     }
 
     public function seenById(int $id)
