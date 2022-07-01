@@ -80,7 +80,7 @@ class SettingService /*extends BaseCrudService*/ implements SettingServiceInterf
                     $query->whereNew(new Where('notify_type_id', $typeId));
                     $query->whereNew(new Where('contact_type_id', $contactTypeId));
                     $query->whereNew(new Where('user_id', $userId));
-                    $settingEntity = $this->getEntityManager()->getRepository($this->getEntityClass())->one($query);
+                    $settingEntity = $this->getEntityManager()->getRepository($this->getEntityClass())->findOne($query);
                 } catch (NotFoundException $e) {
                     $settingEntity = new SettingEntity();
                     $settingEntity->setNotifyTypeId($typeId);

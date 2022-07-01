@@ -55,8 +55,8 @@ class MyHistoryService extends BaseCrudService implements MyHistoryServiceInterf
         $query->whereNew(new Where('id', $id));
         try {
             /** @var NotifyEntity $entity */
-//            $entity = $this->getRepository()->one($query);
-            $entity = $this->getEntityManager()->getRepository(NotifyEntity::class)->one($query);
+//            $entity = $this->getRepository()->findOne($query);
+            $entity = $this->getEntityManager()->getRepository(NotifyEntity::class)->findOne($query);
         } catch (NotFoundException $e) {
             return;
         }
