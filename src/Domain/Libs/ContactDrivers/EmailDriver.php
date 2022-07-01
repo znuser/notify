@@ -30,7 +30,7 @@ class EmailDriver implements ContactDriverInterface
     public function send(NotifyEntity $notifyEntity)
     {
         try {
-            $credentialEntity = $this->credentialService->oneByIdentityIdAndType($notifyEntity->getRecipientId(), 'email');
+            $credentialEntity = $this->credentialService->findOneByIdentityIdAndType($notifyEntity->getRecipientId(), 'email');
             $emailEntity = new EmailEntity();
             $emailEntity->setTo($credentialEntity->getCredential());
             $emailEntity->setSubject($notifyEntity->getSubject());

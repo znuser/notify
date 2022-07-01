@@ -27,7 +27,7 @@ class PhoneDriver implements ContactDriverInterface
     public function send(NotifyEntity $notifyEntity)
     {
         try {
-            $credentialEntity = $this->credentialService->oneByIdentityIdAndType($notifyEntity->getRecipientId(), 'phone');
+            $credentialEntity = $this->credentialService->findOneByIdentityIdAndType($notifyEntity->getRecipientId(), 'phone');
             $smsEntity = new SmsEntity();
             $smsEntity->setPhone($credentialEntity->getCredential());
             $smsEntity->setMessage($notifyEntity->getSubject());

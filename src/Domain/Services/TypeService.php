@@ -22,7 +22,7 @@ class TypeService extends BaseCrudService implements TypeServiceInterface
         $this->transportService = $transportService;
     }
 
-//    public function oneByIdWithI18n(int $id): TypeEntity
+//    public function findOneByIdWithI18n(int $id): TypeEntity
 //    {
 //        $query = new Query();
 //        $query->with(['i18n']);

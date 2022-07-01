@@ -52,7 +52,7 @@ class NotifyService implements NotifyServiceInterface, GetEntityClassInterface
     private function sendNotify(NotifyEntity $notifyEntity)
     {
         ValidationHelper::validateEntity($notifyEntity);
-//        $typeEntity = $this->typeService->oneByIdWithI18n($notifyEntity->getTypeId());
+//        $typeEntity = $this->typeService->findOneByIdWithI18n($notifyEntity->getTypeId());
 //        $notifyEntity->setType($typeEntity);
         $this->addAttributesFromEnv($notifyEntity);
         $this->transportService->send($notifyEntity);
