@@ -3,7 +3,7 @@
 namespace ZnUser\Notify\Domain\Libs\ContactDrivers;
 
 use ZnBundle\Notify\Domain\Interfaces\Services\EmailServiceInterface;
-use ZnBundle\User\Domain\Interfaces\Services\CredentialServiceInterface;
+use ZnUser\Authentication\Domain\Interfaces\Services\CredentialServiceInterface;
 use ZnCore\Domain\Entity\Exceptions\NotFoundException;
 use ZnUser\Notify\Domain\Entities\NotifyEntity;
 use ZnUser\Notify\Domain\Interfaces\Libs\ContactDriverInterface;
