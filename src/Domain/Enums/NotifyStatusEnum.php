@@ -16,8 +16,8 @@ class NotifyStatusEnum implements GetLabelsInterface
     public static function getLabels()
     {
         return [
-            self::NEW => I18Next::t('notify', 'history.status.new'),
-            self::SEEN => I18Next::t('notify', 'history.status.seen'),
+            self::NEW => I18Next::t('user.notify', 'history.status.new'),
+            self::SEEN => I18Next::t('user.notify', 'history.status.seen'),
             //self::DELETED => I18Next::t('core', 'status.deleted'),
         ];
     }

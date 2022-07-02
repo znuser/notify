@@ -14,7 +14,7 @@ use yii\web\View;
 use yii\widgets\ActiveForm;
 use ZnLib\Components\I18Next\Facades\I18Next;
 
-$this->title = I18Next::t('notify', 'transport.title');
+$this->title = I18Next::t('user.notify', 'transport.title');
 
 ?>
 

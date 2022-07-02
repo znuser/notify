@@ -20,7 +20,7 @@ use ZnCore\Domain\DataProvider\Libs\DataProvider;
 use ZnLib\Web\TwBootstrap\Widgets\Pagination\PaginationWidget;
 use ZnSandbox\Sandbox\Status\Web\Widgets\FilterWidget;
 
-$this->title = I18Next::t('notify', 'history.list');
+$this->title = I18Next::t('user.notify', 'history.list');
 $collection = $dataProvider->getCollection();
 
 $statusWidget = new FilterWidget(NotifyStatusEnum::class, $filterModel);
@@ -48,7 +48,7 @@ $statusWidget = new FilterWidget(NotifyStatusEnum::class, $filterModel);
                     <a class="btn btn-success" href="<?= Url::to(['/notify/history/read-all']) ?>" role="button"
                        data-method="post" data-confirm="<?= I18Next::t('web', 'message.clear_list') ?>">
                         <i class="fas fa-check-double"></i>
-                        <?= I18Next::t('notify', 'history.action.read_all') ?>
+                        <?= I18Next::t('user.notify', 'history.action.read_all') ?>
                     </a>
                 <?php elseif ($filterModel->getStatusId() == NotifyStatusEnum::SEEN): ?>
                     <a class="btn btn-danger" href="<?= Url::to(['/notify/history/clear-all']) ?>" role="button"

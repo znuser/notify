@@ -36,7 +36,7 @@ class HistoryController extends BaseController
         $this->service = $service;
         $this->toastrService = $toastrService;
         $this->breadcrumbWidget = $breadcrumbWidget;
-        $this->breadcrumbWidget->add(I18Next::t('notify', 'history.list'), Url::to([$this->baseUri]));
+        $this->breadcrumbWidget->add(I18Next::t('user.notify', 'history.list'), Url::to([$this->baseUri]));
     }
 
     public function actions()
@@ -111,21 +111,21 @@ class HistoryController extends BaseController
     public function actionClearAll()
     {
         $this->service->clearMyMessages();
-        $this->toastrService->success(['notify', 'history.message.clear_all_success']);
+        $this->toastrService->success(['user.notify', 'history.message.clear_all_success']);
         return $this->redirect([$this->baseUri]);
     }
 
     public function actionReadAll()
     {
         $this->service->readAll();
-        $this->toastrService->success(['notify', 'history.message.read_all_success']);
+        $this->toastrService->success(['user.notify', 'history.message.read_all_success']);
         return $this->redirect([$this->baseUri]);
     }
 
     public function actionReadOne(int $id)
     {
         $this->service->seenById($id);
-        $this->toastrService->success(['notify', 'history.message.read_one_success']);
+        $this->toastrService->success(['user.notify', 'history.message.read_one_success']);
         return $this->redirect([$this->baseUri]);
     }
 }

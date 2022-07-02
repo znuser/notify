@@ -46,7 +46,7 @@ class TransportController extends BaseSettingsController
         $this->typeService = $typeService;
         $this->toastrService = $toastrService;
         $this->breadcrumbWidget = $breadcrumbWidget;
-        $this->breadcrumbWidget->add(I18Next::t('notify', 'settings.title'), Url::to(['/' . $this->route]));
+        $this->breadcrumbWidget->add(I18Next::t('user.notify', 'settings.title'), Url::to(['/' . $this->route]));
     }
 
     public function actionIndex()

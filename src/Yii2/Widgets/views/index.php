@@ -32,7 +32,7 @@ use ZnCore\Domain\DataProvider\Libs\DataProvider;
         <?php endforeach; ?>
     <?php else: ?>
         <span class="dropdown-item text-muted">
-            <?= I18Next::t('notify', 'history.message.empty_list') ?>
+            <?= I18Next::t('user.notify', 'history.message.empty_list') ?>
         </span>
     <?php endif; ?>
 
@@ -58,6 +58,6 @@ use ZnCore\Domain\DataProvider\Libs\DataProvider;
 
     <div class="dropdown-divider"></div>
     <a href="<?= Url::to(['/notify/history']) ?>" class="dropdown-item dropdown-footer">
-        <?= I18Next::t('notify', 'history.action.see_all_notifications') ?>
+        <?= I18Next::t('user.notify', 'history.action.see_all_notifications') ?>
     </a>
 </div>
