@@ -2,7 +2,7 @@
 
 namespace ZnUser\Notify\Domain\Entities;
 
-use Illuminate\Support\Collection;
+use ZnCore\Domain\Collection\Libs\Collection;
 use Symfony\Component\Validator\Constraints as Assert;
 use Symfony\Component\Validator\Mapping\ClassMetadata;
 use ZnCore\Domain\Entity\Interfaces\EntityIdInterface;

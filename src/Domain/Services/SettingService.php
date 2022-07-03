@@ -2,7 +2,7 @@
 
 namespace ZnUser\Notify\Domain\Services;
 
-use Illuminate\Support\Collection;
+use ZnCore\Domain\Collection\Libs\Collection;
 use ZnUser\Notify\Domain\Entities\SettingEntity;
 use ZnUser\Notify\Domain\Interfaces\Repositories\SettingRepositoryInterface;
 use ZnUser\Notify\Domain\Interfaces\Services\SettingServiceInterface;

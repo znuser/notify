@@ -2,7 +2,7 @@
 
 namespace ZnUser\Notify\Domain\Interfaces\Services;
 
-use Illuminate\Support\Collection;
+use ZnCore\Domain\Collection\Libs\Collection;
 use ZnUser\Notify\Domain\Entities\SettingEntity;
 
 interface SettingServiceInterface

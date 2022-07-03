@@ -8,7 +8,7 @@
  * @var ValidationByMetadataInterface $filterModel
  */
 
-use Illuminate\Support\Collection;
+use ZnCore\Domain\Collection\Libs\Collection;
 use ZnUser\Notify\Domain\Entities\NotifyEntity;
 use ZnUser\Notify\Domain\Enums\NotifyStatusEnum;
 use yii\helpers\Url;

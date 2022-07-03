@@ -6,7 +6,7 @@
  * @var Collection | ContactTypeEntity[] $contactTypeCollection
  */
 
-use Illuminate\Support\Collection;
+use ZnCore\Domain\Collection\Libs\Collection;
 use ZnUser\Notify\Domain\Entities\TypeEntity;
 use ZnBundle\Person\Domain\Entities\ContactTypeEntity;
 use yii\helpers\Html;
