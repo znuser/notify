@@ -2,8 +2,8 @@
 
 /**
  * @var View $this
- * @var Collection | TypeEntity[] $typeCollection
- * @var Collection | ContactTypeEntity[] $contactTypeCollection
+ * @var \ZnCore\Domain\Collection\Interfaces\Enumerable | TypeEntity[] $typeCollection
+ * @var \ZnCore\Domain\Collection\Interfaces\Enumerable | ContactTypeEntity[] $contactTypeCollection
  */
 
 use ZnCore\Domain\Collection\Libs\Collection;

@@ -3,7 +3,7 @@
 /**
  * @var View $this
  * @var Request $request
- * @var Collection | NotifyEntity[] $collection
+ * @var \ZnCore\Domain\Collection\Interfaces\Enumerable | NotifyEntity[] $collection
  * @var DataProvider $dataProvider
  * @var ValidationByMetadataInterface $filterModel
  */
