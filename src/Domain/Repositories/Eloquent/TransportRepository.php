@@ -4,11 +4,10 @@ namespace ZnUser\Notify\Domain\Repositories\Eloquent;
 
 use ZnCore\Domain\Collection\Interfaces\Enumerable;
 use ZnCore\Domain\Collection\Libs\Collection;
-use ZnLib\Components\Status\Enums\StatusEnum;
 use ZnCore\Domain\Entity\Helpers\CollectionHelper;
-use ZnCore\Domain\Entity\Helpers\EntityHelper;
 use ZnCore\Domain\Query\Entities\Query;
 use ZnDatabase\Eloquent\Domain\Base\BaseEloquentCrudRepository;
+use ZnLib\Components\Status\Enums\StatusEnum;
 use ZnUser\Notify\Domain\Entities\TransportEntity;
 use ZnUser\Notify\Domain\Entities\TypeTransportEntity;
 use ZnUser\Notify\Domain\Interfaces\Repositories\TransportRepositoryInterface;

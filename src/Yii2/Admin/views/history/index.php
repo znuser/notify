@@ -8,17 +8,16 @@
  * @var ValidationByMetadataInterface $filterModel
  */
 
-use ZnCore\Domain\Collection\Libs\Collection;
-use ZnUser\Notify\Domain\Entities\NotifyEntity;
-use ZnUser\Notify\Domain\Enums\NotifyStatusEnum;
 use yii\helpers\Url;
 use yii\web\Request;
 use yii\web\View;
-use ZnLib\Components\I18Next\Facades\I18Next;
 use ZnCore\Base\Validation\Interfaces\ValidationByMetadataInterface;
 use ZnCore\Domain\DataProvider\Libs\DataProvider;
+use ZnLib\Components\I18Next\Facades\I18Next;
 use ZnLib\Web\TwBootstrap\Widgets\Pagination\PaginationWidget;
 use ZnSandbox\Sandbox\Status\Web\Widgets\FilterWidget;
+use ZnUser\Notify\Domain\Entities\NotifyEntity;
+use ZnUser\Notify\Domain\Enums\NotifyStatusEnum;
 
 $this->title = I18Next::t('user.notify', 'history.list');
 $collection = $dataProvider->getCollection();

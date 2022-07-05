@@ -6,13 +6,12 @@
  * @var \ZnCore\Domain\Collection\Interfaces\Enumerable | ContactTypeEntity[] $contactTypeCollection
  */
 
-use ZnCore\Domain\Collection\Libs\Collection;
-use ZnUser\Notify\Domain\Entities\TypeEntity;
-use ZnBundle\Person\Domain\Entities\ContactTypeEntity;
 use yii\helpers\Html;
 use yii\web\View;
 use yii\widgets\ActiveForm;
+use ZnBundle\Person\Domain\Entities\ContactTypeEntity;
 use ZnLib\Components\I18Next\Facades\I18Next;
+use ZnUser\Notify\Domain\Entities\TypeEntity;
 
 $this->title = I18Next::t('user.notify', 'transport.title');
 
@@ -43,7 +42,7 @@ $this->title = I18Next::t('user.notify', 'transport.title');
             <?php foreach ($contactTypeCollection as $contactTypeEntity):
                 $notifyTypeId = $typeEntity->getId();
                 $contactTypeId = $contactTypeEntity->getId();
-                $fieldName = $notifyTypeId . '['.$contactTypeId.']';
+                $fieldName = $notifyTypeId . '[' . $contactTypeId . ']';
                 ?>
                 <td>
                     <div class="float-left">

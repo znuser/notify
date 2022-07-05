@@ -3,18 +3,18 @@
 namespace ZnUser\Notify\Domain\Services;
 
 use ZnCore\Domain\Collection\Interfaces\Enumerable;
-use ZnCore\Domain\Collection\Libs\Collection;
+use ZnCore\Domain\Entity\Exceptions\NotFoundException;
+use ZnCore\Domain\EntityManager\Interfaces\EntityManagerInterface;
+use ZnCore\Domain\EntityManager\Traits\EntityManagerAwareTrait;
+use ZnCore\Domain\Query\Entities\Query;
+use ZnCore\Domain\Query\Entities\Where;
+use ZnUser\Authentication\Domain\Interfaces\Services\AuthServiceInterface;
 use ZnUser\Notify\Domain\Entities\SettingEntity;
 use ZnUser\Notify\Domain\Interfaces\Repositories\SettingRepositoryInterface;
 use ZnUser\Notify\Domain\Interfaces\Services\SettingServiceInterface;
-use ZnUser\Authentication\Domain\Interfaces\Services\AuthServiceInterface;
-use ZnCore\Domain\Entity\Exceptions\NotFoundException;
-use ZnCore\Domain\Query\Entities\Where;
-use ZnCore\Domain\EntityManager\Interfaces\EntityManagerInterface;
-use ZnCore\Domain\Query\Entities\Query;
-use ZnCore\Domain\EntityManager\Traits\EntityManagerAwareTrait;
 
-class SettingService /*extends BaseCrudService*/ implements SettingServiceInterface
+class SettingService /*extends BaseCrudService*/
+    implements SettingServiceInterface
 {
 
     use EntityManagerAwareTrait;
@@ -41,7 +41,8 @@ class SettingService /*extends BaseCrudService*/ implements SettingServiceInterf
         return $query;
     }
 
-    public function getSettingsByUserId(int $userId): array {
+    public function getSettingsByUserId(int $userId): array
+    {
         $data = [];
         $settingsCollection = $this->allByUserId($userId);
         foreach ($settingsCollection as $settingsEntity) {
@@ -50,14 +51,16 @@ class SettingService /*extends BaseCrudService*/ implements SettingServiceInterf
         return $data;
     }
 
-    private function allByUserId(int $userId): Enumerable {
+    private function allByUserId(int $userId): Enumerable
+    {
         $query = new Query();
         $query->whereNew(new Where('user_id', $userId));
         $query->with(['notifyType', 'contactType']);
         return $this->getEntityManager()->getRepository($this->getEntityClass())->findAll($query);
     }
 
-    public function allByUserAndType(int $userId, int $typeId): Enumerable {
+    public function allByUserAndType(int $userId, int $typeId): Enumerable
+    {
         $query = new Query();
         $query->whereNew(new Where('user_id', $userId));
         $query->whereNew(new Where('notify_type_id', $typeId));
@@ -65,14 +68,16 @@ class SettingService /*extends BaseCrudService*/ implements SettingServiceInterf
         return $this->getEntityManager()->getRepository($this->getEntityClass())->findAll($query);
     }
 
-    public function getMySettings(): array {
+    public function getMySettings(): array
+    {
 
         $userId = $this->authService->getIdentity()->getId();
 
         return $this->getSettingsByUserId($userId);
     }
 
-    public function saveMySettings(array $data) {
+    public function saveMySettings(array $data)
+    {
         $userId = $this->authService->getIdentity()->getId();
         foreach ($data as $typeId => $typeData) {
             foreach ($typeData as $contactTypeId => $value) {

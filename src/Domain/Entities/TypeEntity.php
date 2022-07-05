@@ -2,12 +2,11 @@
 
 namespace ZnUser\Notify\Domain\Entities;
 
-use ZnCore\Domain\Collection\Interfaces\Enumerable;
-use ZnCore\Domain\Collection\Libs\Collection;
 use Symfony\Component\Validator\Constraints as Assert;
 use Symfony\Component\Validator\Mapping\ClassMetadata;
-use ZnCore\Domain\Entity\Interfaces\EntityIdInterface;
 use ZnCore\Base\Validation\Interfaces\ValidationByMetadataInterface;
+use ZnCore\Domain\Collection\Interfaces\Enumerable;
+use ZnCore\Domain\Entity\Interfaces\EntityIdInterface;
 
 class TypeEntity implements ValidationByMetadataInterface, EntityIdInterface
 {
@@ -72,7 +71,7 @@ class TypeEntity implements ValidationByMetadataInterface, EntityIdInterface
     }
 
     /**
-     * @return Collection|null|TypeI18nEntity[]
+     * @return Enumerable|null|TypeI18nEntity[]
      */
     public function getI18n(): ?Enumerable
     {
