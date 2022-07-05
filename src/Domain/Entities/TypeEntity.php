@@ -2,6 +2,7 @@
 
 namespace ZnUser\Notify\Domain\Entities;
 
+use ZnCore\Domain\Collection\Interfaces\Enumerable;
 use ZnCore\Domain\Collection\Libs\Collection;
 use Symfony\Component\Validator\Constraints as Assert;
 use Symfony\Component\Validator\Mapping\ClassMetadata;
@@ -73,25 +74,25 @@ class TypeEntity implements ValidationByMetadataInterface, EntityIdInterface
     /**
      * @return Collection|null|TypeI18nEntity[]
      */
-    public function getI18n(): ?Collection
+    public function getI18n(): ?Enumerable
     {
         return $this->i18n;
     }
 
-    public function setI18n(Collection $i18n): void
+    public function setI18n(Enumerable $i18n): void
     {
         $this->i18n = $i18n;
     }
 
     /**
-     * @return Collection|null|TransportEntity
+     * @return Enumerable|null|TransportEntity
      */
-    public function getTransports(): ?Collection
+    public function getTransports(): ?Enumerable
     {
         return $this->transports;
     }
 
-    public function setTransports(Collection $transports): void
+    public function setTransports(Enumerable $transports): void
     {
         $this->transports = $transports;
     }
