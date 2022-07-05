@@ -2,6 +2,7 @@
 
 namespace ZnUser\Notify\Domain\Repositories\Eloquent;
 
+use ZnCore\Domain\Collection\Interfaces\Enumerable;
 use ZnCore\Domain\Collection\Libs\Collection;
 use ZnLib\Components\Status\Enums\StatusEnum;
 use ZnCore\Domain\Entity\Helpers\CollectionHelper;
@@ -25,7 +26,7 @@ class TransportRepository extends BaseEloquentCrudRepository implements Transpor
         return TransportEntity::class;
     }
 
-    public function allEnabledByTypeId(int $typeId): Collection
+    public function allEnabledByTypeId(int $typeId): Enumerable
     {
         $query = new Query();
         $query->where('type_id', $typeId);

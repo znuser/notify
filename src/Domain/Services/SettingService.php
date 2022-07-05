@@ -2,6 +2,7 @@
 
 namespace ZnUser\Notify\Domain\Services;
 
+use ZnCore\Domain\Collection\Interfaces\Enumerable;
 use ZnCore\Domain\Collection\Libs\Collection;
 use ZnUser\Notify\Domain\Entities\SettingEntity;
 use ZnUser\Notify\Domain\Interfaces\Repositories\SettingRepositoryInterface;
@@ -49,14 +50,14 @@ class SettingService /*extends BaseCrudService*/ implements SettingServiceInterf
         return $data;
     }
 
-    private function allByUserId(int $userId): Collection {
+    private function allByUserId(int $userId): Enumerable {
         $query = new Query();
         $query->whereNew(new Where('user_id', $userId));
         $query->with(['notifyType', 'contactType']);
         return $this->getEntityManager()->getRepository($this->getEntityClass())->findAll($query);
     }
 
-    public function allByUserAndType(int $userId, int $typeId): Collection {
+    public function allByUserAndType(int $userId, int $typeId): Enumerable {
         $query = new Query();
         $query->whereNew(new Where('user_id', $userId));
         $query->whereNew(new Where('notify_type_id', $typeId));
