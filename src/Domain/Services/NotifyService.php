@@ -3,7 +3,7 @@
 namespace ZnUser\Notify\Domain\Services;
 
 use ZnCore\Validation\Helpers\ValidationHelper;
-use ZnCore\Domain\Domain\Interfaces\GetEntityClassInterface;
+use ZnCore\Domain\Interfaces\GetEntityClassInterface;
 use ZnCore\EntityManager\Interfaces\EntityManagerInterface;
 use ZnCore\EntityManager\Traits\EntityManagerAwareTrait;
 use ZnUser\Notify\Domain\Entities\NotifyEntity;
