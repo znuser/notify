@@ -2,8 +2,8 @@
 
 /**
  * @var View $this
- * @var \ZnCore\Domain\Collection\Interfaces\Enumerable | TypeEntity[] $typeCollection
- * @var \ZnCore\Domain\Collection\Interfaces\Enumerable | ContactTypeEntity[] $contactTypeCollection
+ * @var \ZnCore\Collection\Interfaces\Enumerable | TypeEntity[] $typeCollection
+ * @var \ZnCore\Collection\Interfaces\Enumerable | ContactTypeEntity[] $contactTypeCollection
  */
 
 use yii\helpers\Html;

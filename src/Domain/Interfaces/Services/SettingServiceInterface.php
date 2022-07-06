@@ -2,7 +2,7 @@
 
 namespace ZnUser\Notify\Domain\Interfaces\Services;
 
-use ZnCore\Domain\Collection\Interfaces\Enumerable;
+use ZnCore\Collection\Interfaces\Enumerable;
 use ZnUser\Notify\Domain\Entities\SettingEntity;
 
 interface SettingServiceInterface

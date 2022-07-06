@@ -3,7 +3,7 @@
 namespace ZnUser\Notify\Domain\Services;
 
 use ZnUser\Notify\Domain\Interfaces\Services\TypeTransportServiceInterface;
-use ZnCore\Domain\EntityManager\Interfaces\EntityManagerInterface;
+use ZnCore\EntityManager\Interfaces\EntityManagerInterface;
 use ZnCore\Domain\Service\Base\BaseCrudService;
 use ZnUser\Notify\Domain\Entities\TypeTransportEntity;
 

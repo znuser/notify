@@ -3,7 +3,7 @@
 /**
  * @var View $this
  * @var Request $request
- * @var \ZnCore\Domain\Collection\Interfaces\Enumerable | NotifyEntity[] $collection
+ * @var \ZnCore\Collection\Interfaces\Enumerable | NotifyEntity[] $collection
  * @var DataProvider $dataProvider
  * @var ValidationByMetadataInterface $filterModel
  */
@@ -11,7 +11,7 @@
 use yii\helpers\Url;
 use yii\web\Request;
 use yii\web\View;
-use ZnCore\Base\Validation\Interfaces\ValidationByMetadataInterface;
+use ZnCore\Validation\Interfaces\ValidationByMetadataInterface;
 use ZnCore\Domain\DataProvider\Libs\DataProvider;
 use ZnLib\Components\I18Next\Facades\I18Next;
 use ZnLib\Web\TwBootstrap\Widgets\Pagination\PaginationWidget;

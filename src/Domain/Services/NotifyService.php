@@ -2,10 +2,10 @@
 
 namespace ZnUser\Notify\Domain\Services;
 
-use ZnCore\Base\Validation\Helpers\ValidationHelper;
+use ZnCore\Validation\Helpers\ValidationHelper;
 use ZnCore\Domain\Domain\Interfaces\GetEntityClassInterface;
-use ZnCore\Domain\EntityManager\Interfaces\EntityManagerInterface;
-use ZnCore\Domain\EntityManager\Traits\EntityManagerAwareTrait;
+use ZnCore\EntityManager\Interfaces\EntityManagerInterface;
+use ZnCore\EntityManager\Traits\EntityManagerAwareTrait;
 use ZnUser\Notify\Domain\Entities\NotifyEntity;
 use ZnUser\Notify\Domain\Interfaces\Services\NotifyServiceInterface;
 use ZnUser\Notify\Domain\Interfaces\Services\TransportServiceInterface;

@@ -15,7 +15,7 @@ use yii\helpers\Url;
 use ZnBundle\Notify\Domain\Interfaces\Services\ToastrServiceInterface;
 use ZnBundle\UserSettings\Yii2\Admin\Controllers\BaseSettingsController;
 use ZnLib\Components\I18Next\Facades\I18Next;
-use ZnCore\Base\Validation\Exceptions\UnprocessibleEntityException;
+use ZnCore\Validation\Exceptions\UnprocessibleEntityException;
 use ZnCore\Domain\Query\Entities\Query;
 use ZnLib\Web\TwBootstrap\Widgets\Breadcrumb\BreadcrumbWidget;
 use ZnYii\Base\Helpers\FormHelper;
