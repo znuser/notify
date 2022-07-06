@@ -11,7 +11,7 @@ use Symfony\Component\Validator\Mapping\ClassMetadata;
 use ZnLib\Components\Status\Enums\StatusEnum;
 use ZnCore\Enum\Helpers\EnumHelper;
 use ZnCore\Arr\Helpers\ArrayHelper;
-use ZnLib\Components\I18Next\Helpers\TranslatorHelper;
+use ZnLib\I18Next\Helpers\TranslatorHelper;
 use ZnCore\Entity\Helpers\EntityHelper;
 use ZnCore\Entity\Interfaces\EntityIdInterface;
 use ZnCore\Validation\Interfaces\ValidationByMetadataInterface;

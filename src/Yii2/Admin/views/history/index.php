@@ -13,7 +13,7 @@ use yii\web\Request;
 use yii\web\View;
 use ZnCore\Validation\Interfaces\ValidationByMetadataInterface;
 use ZnCore\DataProvider\Libs\DataProvider;
-use ZnLib\Components\I18Next\Facades\I18Next;
+use ZnLib\I18Next\Facades\I18Next;
 use ZnLib\Web\TwBootstrap\Widgets\Pagination\PaginationWidget;
 use ZnSandbox\Sandbox\Status\Web\Widgets\FilterWidget;
 use ZnUser\Notify\Domain\Entities\NotifyEntity;

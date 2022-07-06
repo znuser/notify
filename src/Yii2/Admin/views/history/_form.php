@@ -11,7 +11,7 @@ use yii\helpers\Html;
 use yii\web\Request;
 use yii\web\View;
 use yii\widgets\ActiveForm;
-use ZnLib\Components\I18Next\Facades\I18Next;
+use ZnLib\I18Next\Facades\I18Next;
 use ZnYii\Web\Widgets\CancelButton\CancelButtonWidget;
 
 ?>
