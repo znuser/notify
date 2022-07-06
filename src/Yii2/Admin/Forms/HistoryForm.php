@@ -9,7 +9,7 @@ use ZnBundle\Eav\Domain\Interfaces\Services\EntityServiceInterface;
 use ZnBundle\Reference\Domain\Interfaces\Services\ItemServiceInterface;
 use ZnUser\Identity\Domain\Interfaces\Services\IdentityServiceInterface;
 use ZnCore\Entity\Helpers\EntityHelper;
-use ZnCore\Domain\Query\Entities\Query;
+use ZnCore\Query\Entities\Query;
 use ZnYii\Base\Forms\BaseForm;
 
 class HistoryForm extends BaseForm

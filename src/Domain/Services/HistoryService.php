@@ -12,9 +12,9 @@ use ZnBundle\Notify\Domain\Entities\SmsEntity;
 use ZnBundle\Notify\Domain\Interfaces\Repositories\EmailRepositoryInterface;
 use ZnBundle\Notify\Domain\Interfaces\Repositories\SmsRepositoryInterface;
 use ZnCore\EntityManager\Interfaces\EntityManagerInterface;
-use ZnCore\Domain\Query\Entities\Query;
+use ZnCore\Query\Entities\Query;
 use ZnCore\EntityManager\Traits\EntityManagerAwareTrait;
-use ZnCore\Domain\Repository\Traits\RepositoryAwareTrait;
+use ZnCore\Repository\Traits\RepositoryAwareTrait;
 
 class HistoryService implements HistoryServiceInterface
 {

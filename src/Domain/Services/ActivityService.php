@@ -6,7 +6,7 @@ use ZnUser\Notify\Domain\Entities\ActivityEntity;
 use ZnUser\Notify\Domain\Interfaces\Repositories\ActivityRepositoryInterface;
 use ZnUser\Notify\Domain\Interfaces\Services\ActivityServiceInterface;
 use ZnUser\Authentication\Domain\Interfaces\Services\AuthServiceInterface;
-use ZnCore\Domain\Service\Base\BaseCrudService;
+use ZnCore\Service\Base\BaseCrudService;
 use ZnCore\Validation\Exceptions\UnprocessibleEntityException;
 use ZnCore\Entity\Helpers\EntityHelper;
 use ZnCore\Entity\Interfaces\EntityIdInterface;

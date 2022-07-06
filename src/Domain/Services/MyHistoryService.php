@@ -8,10 +8,10 @@ use ZnUser\Notify\Domain\Enums\NotifyStatusEnum;
 use ZnUser\Notify\Domain\Interfaces\Services\MyHistoryServiceInterface;
 use ZnUser\Authentication\Domain\Interfaces\Services\AuthServiceInterface;
 use ZnCore\Entity\Exceptions\NotFoundException;
-use ZnCore\Domain\Service\Base\BaseCrudService;
-use ZnCore\Domain\Query\Entities\Where;
+use ZnCore\Service\Base\BaseCrudService;
+use ZnCore\Query\Entities\Where;
 use ZnCore\EntityManager\Interfaces\EntityManagerInterface;
-use ZnCore\Domain\Query\Entities\Query;
+use ZnCore\Query\Entities\Query;
 
 class MyHistoryService extends BaseCrudService implements MyHistoryServiceInterface
 {

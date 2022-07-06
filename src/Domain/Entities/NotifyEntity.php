@@ -4,13 +4,13 @@ namespace ZnUser\Notify\Domain\Entities;
 
 use DateTime;
 use ZnCore\Entity\Helpers\CollectionHelper;
-use ZnCore\Base\Enum\Constraints\Enum;
+use ZnCore\Enum\Constraints\Enum;
 use ZnUser\Notify\Domain\Enums\NotifyStatusEnum;
 use Symfony\Component\Validator\Constraints as Assert;
 use Symfony\Component\Validator\Mapping\ClassMetadata;
 use ZnLib\Components\Status\Enums\StatusEnum;
-use ZnCore\Base\Enum\Helpers\EnumHelper;
-use ZnCore\Base\Arr\Helpers\ArrayHelper;
+use ZnCore\Enum\Helpers\EnumHelper;
+use ZnCore\Arr\Helpers\ArrayHelper;
 use ZnLib\Components\I18Next\Helpers\TranslatorHelper;
 use ZnCore\Entity\Helpers\EntityHelper;
 use ZnCore\Entity\Interfaces\EntityIdInterface;
