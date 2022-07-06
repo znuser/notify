@@ -33,7 +33,7 @@ class SettingService /*extends BaseCrudService*/
         return SettingEntity::class;
     }
 
-    protected function forgeQuery(Query $query = null)
+    protected function forgeQuery(Query $query = null): Query
     {
         $query = parent::forgeQuery($query);
         $userId = $this->authService->getIdentity()->getId();
