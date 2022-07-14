@@ -4,8 +4,8 @@ namespace ZnUser\Notify\Domain\Services;
 
 use ZnCore\Instance\Exceptions\NotInstanceOfException;
 use ZnCore\Instance\Helpers\ClassHelper;
-use ZnCore\Service\Base\BaseCrudService;
-use ZnCore\EntityManager\Interfaces\EntityManagerInterface;
+use ZnDomain\Service\Base\BaseCrudService;
+use ZnDomain\EntityManager\Interfaces\EntityManagerInterface;
 use ZnUser\Notify\Domain\Entities\NotifyEntity;
 use ZnUser\Notify\Domain\Entities\TransportEntity;
 use ZnUser\Notify\Domain\Interfaces\Libs\ContactDriverInterface;

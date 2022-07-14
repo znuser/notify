@@ -3,9 +3,9 @@
 namespace ZnUser\Notify\Domain\Services;
 
 use ZnCore\Validation\Helpers\ValidationHelper;
-use ZnCore\Domain\Interfaces\GetEntityClassInterface;
-use ZnCore\EntityManager\Interfaces\EntityManagerInterface;
-use ZnCore\EntityManager\Traits\EntityManagerAwareTrait;
+use ZnDomain\Domain\Interfaces\GetEntityClassInterface;
+use ZnDomain\EntityManager\Interfaces\EntityManagerInterface;
+use ZnDomain\EntityManager\Traits\EntityManagerAwareTrait;
 use ZnUser\Notify\Domain\Entities\NotifyEntity;
 use ZnUser\Notify\Domain\Interfaces\Services\NotifyServiceInterface;
 use ZnUser\Notify\Domain\Interfaces\Services\TransportServiceInterface;

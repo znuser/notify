@@ -4,8 +4,8 @@ namespace ZnUser\Notify\Domain\Services;
 
 use ZnCore\Collection\Interfaces\Enumerable;
 use ZnCore\Entity\Exceptions\NotFoundException;
-use ZnCore\EntityManager\Interfaces\EntityManagerInterface;
-use ZnCore\EntityManager\Traits\EntityManagerAwareTrait;
+use ZnDomain\EntityManager\Interfaces\EntityManagerInterface;
+use ZnDomain\EntityManager\Traits\EntityManagerAwareTrait;
 use ZnCore\Query\Entities\Query;
 use ZnCore\Query\Entities\Where;
 use ZnUser\Authentication\Domain\Interfaces\Services\AuthServiceInterface;

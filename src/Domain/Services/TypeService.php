@@ -2,8 +2,8 @@
 
 namespace ZnUser\Notify\Domain\Services;
 
-use ZnCore\Service\Base\BaseCrudService;
-use ZnCore\EntityManager\Interfaces\EntityManagerInterface;
+use ZnDomain\Service\Base\BaseCrudService;
+use ZnDomain\EntityManager\Interfaces\EntityManagerInterface;
 use ZnCore\Query\Entities\Query;
 use ZnUser\Notify\Domain\Entities\TypeEntity;
 use ZnUser\Notify\Domain\Interfaces\Repositories\TypeRepositoryInterface;

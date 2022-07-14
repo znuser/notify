@@ -2,7 +2,7 @@
 
 namespace ZnUser\Notify\Domain\Interfaces\Services;
 
-use ZnCore\Service\Interfaces\CrudServiceInterface;
+use ZnDomain\Service\Interfaces\CrudServiceInterface;
 use ZnUser\Notify\Domain\Entities\TypeEntity;
 
 interface TypeServiceInterface extends CrudServiceInterface

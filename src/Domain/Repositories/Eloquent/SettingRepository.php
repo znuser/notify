@@ -6,7 +6,7 @@ use ZnUser\Notify\Domain\Entities\SettingEntity;
 use ZnUser\Notify\Domain\Interfaces\Repositories\SettingRepositoryInterface;
 use ZnUser\Notify\Domain\Interfaces\Repositories\TypeRepositoryInterface;
 use ZnBundle\Person\Domain\Interfaces\Repositories\ContactTypeRepositoryInterface;
-use ZnCore\Relation\Libs\Types\OneToOneRelation;
+use ZnDomain\Relation\Libs\Types\OneToOneRelation;
 use ZnDatabase\Eloquent\Domain\Base\BaseEloquentCrudRepository;
 
 class SettingRepository extends BaseEloquentCrudRepository implements SettingRepositoryInterface

@@ -11,10 +11,10 @@ use ZnBundle\Notify\Domain\Entities\EmailEntity;
 use ZnBundle\Notify\Domain\Entities\SmsEntity;
 use ZnBundle\Notify\Domain\Interfaces\Repositories\EmailRepositoryInterface;
 use ZnBundle\Notify\Domain\Interfaces\Repositories\SmsRepositoryInterface;
-use ZnCore\EntityManager\Interfaces\EntityManagerInterface;
+use ZnDomain\EntityManager\Interfaces\EntityManagerInterface;
 use ZnCore\Query\Entities\Query;
-use ZnCore\EntityManager\Traits\EntityManagerAwareTrait;
-use ZnCore\Repository\Traits\RepositoryAwareTrait;
+use ZnDomain\EntityManager\Traits\EntityManagerAwareTrait;
+use ZnDomain\Repository\Traits\RepositoryAwareTrait;
 
 class HistoryService implements HistoryServiceInterface
 {
