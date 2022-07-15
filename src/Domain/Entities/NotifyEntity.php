@@ -3,7 +3,7 @@
 namespace ZnUser\Notify\Domain\Entities;
 
 use DateTime;
-use ZnDomain\Entity\Helpers\CollectionHelper;
+use ZnCore\Collection\Helpers\CollectionHelper;
 use ZnDomain\Сomponents\Constraints\Enum;
 use ZnUser\Notify\Domain\Enums\NotifyStatusEnum;
 use Symfony\Component\Validator\Constraints as Assert;

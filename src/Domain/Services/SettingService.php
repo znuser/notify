@@ -3,7 +3,7 @@
 namespace ZnUser\Notify\Domain\Services;
 
 use ZnCore\Collection\Interfaces\Enumerable;
-use ZnDomain\Entity\Exceptions\NotFoundException;
+use ZnCore\Contract\Common\Exceptions\NotFoundException;
 use ZnDomain\EntityManager\Interfaces\EntityManagerInterface;
 use ZnDomain\EntityManager\Traits\EntityManagerAwareTrait;
 use ZnDomain\Query\Entities\Query;

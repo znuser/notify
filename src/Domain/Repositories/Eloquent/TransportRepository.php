@@ -4,7 +4,7 @@ namespace ZnUser\Notify\Domain\Repositories\Eloquent;
 
 use ZnCore\Collection\Interfaces\Enumerable;
 use ZnCore\Collection\Libs\Collection;
-use ZnDomain\Entity\Helpers\CollectionHelper;
+use ZnCore\Collection\Helpers\CollectionHelper;
 use ZnDomain\Query\Entities\Query;
 use ZnDatabase\Eloquent\Domain\Base\BaseEloquentCrudRepository;
 use ZnLib\Components\Status\Enums\StatusEnum;

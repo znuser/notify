@@ -2,7 +2,7 @@
 
 namespace ZnUser\Notify\Yii2\Admin\Forms;
 
-use ZnDomain\Entity\Helpers\CollectionHelper;
+use ZnCore\Collection\Helpers\CollectionHelper;
 use ZnUser\Notify\Domain\Interfaces\Repositories\HistoryRepositoryInterface;
 use ZnUser\Notify\Domain\Interfaces\Repositories\TypeRepositoryInterface;
 use ZnBundle\Eav\Domain\Interfaces\Services\EntityServiceInterface;
