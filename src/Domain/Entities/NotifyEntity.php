@@ -4,7 +4,7 @@ namespace ZnUser\Notify\Domain\Entities;
 
 use DateTime;
 use ZnDomain\Entity\Helpers\CollectionHelper;
-use ZnDomain\Сomponents\EnumRepository\Constraints\Enum;
+use ZnDomain\Сomponents\Constraints\Enum;
 use ZnUser\Notify\Domain\Enums\NotifyStatusEnum;
 use Symfony\Component\Validator\Constraints as Assert;
 use Symfony\Component\Validator\Mapping\ClassMetadata;
