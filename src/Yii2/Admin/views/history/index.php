@@ -11,7 +11,7 @@
 use yii\helpers\Url;
 use yii\web\Request;
 use yii\web\View;
-use ZnCore\Validation\Interfaces\ValidationByMetadataInterface;
+use ZnDomain\Validator\Interfaces\ValidationByMetadataInterface;
 use ZnDomain\DataProvider\Libs\DataProvider;
 use ZnLib\I18Next\Facades\I18Next;
 use ZnLib\Web\TwBootstrap\Widgets\Pagination\PaginationWidget;

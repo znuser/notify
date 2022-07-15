@@ -4,9 +4,9 @@ namespace ZnUser\Notify\Domain\Entities;
 
 use Symfony\Component\Validator\Constraints as Assert;
 use Symfony\Component\Validator\Mapping\ClassMetadata;
-use ZnCore\Validation\Interfaces\ValidationByMetadataInterface;
+use ZnDomain\Validator\Interfaces\ValidationByMetadataInterface;
 use ZnCore\Collection\Interfaces\Enumerable;
-use ZnCore\Entity\Interfaces\EntityIdInterface;
+use ZnDomain\Entity\Interfaces\EntityIdInterface;
 
 class TypeEntity implements ValidationByMetadataInterface, EntityIdInterface
 {

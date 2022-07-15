@@ -7,9 +7,9 @@ use ZnUser\Notify\Domain\Interfaces\Repositories\ActivityRepositoryInterface;
 use ZnUser\Notify\Domain\Interfaces\Services\ActivityServiceInterface;
 use ZnUser\Authentication\Domain\Interfaces\Services\AuthServiceInterface;
 use ZnDomain\Service\Base\BaseCrudService;
-use ZnCore\Validation\Exceptions\UnprocessibleEntityException;
-use ZnCore\Entity\Helpers\EntityHelper;
-use ZnCore\Entity\Interfaces\EntityIdInterface;
+use ZnDomain\Validator\Exceptions\UnprocessibleEntityException;
+use ZnDomain\Entity\Helpers\EntityHelper;
+use ZnDomain\Entity\Interfaces\EntityIdInterface;
 
 class ActivityService extends BaseCrudService implements ActivityServiceInterface
 {

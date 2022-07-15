@@ -4,7 +4,7 @@ namespace ZnUser\Notify\Domain\Services;
 
 use ZnDomain\Service\Base\BaseCrudService;
 use ZnDomain\EntityManager\Interfaces\EntityManagerInterface;
-use ZnCore\Query\Entities\Query;
+use ZnDomain\Query\Entities\Query;
 use ZnUser\Notify\Domain\Entities\TypeEntity;
 use ZnUser\Notify\Domain\Interfaces\Repositories\TypeRepositoryInterface;
 use ZnUser\Notify\Domain\Interfaces\Services\TransportServiceInterface;

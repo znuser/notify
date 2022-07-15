@@ -2,16 +2,16 @@
 
 namespace ZnUser\Notify\Domain\Services;
 
-use ZnCore\Entity\Interfaces\EntityIdInterface;
+use ZnDomain\Entity\Interfaces\EntityIdInterface;
 use ZnUser\Notify\Domain\Entities\NotifyEntity;
 use ZnUser\Notify\Domain\Enums\NotifyStatusEnum;
 use ZnUser\Notify\Domain\Interfaces\Services\MyHistoryServiceInterface;
 use ZnUser\Authentication\Domain\Interfaces\Services\AuthServiceInterface;
-use ZnCore\Entity\Exceptions\NotFoundException;
+use ZnDomain\Entity\Exceptions\NotFoundException;
 use ZnDomain\Service\Base\BaseCrudService;
-use ZnCore\Query\Entities\Where;
+use ZnDomain\Query\Entities\Where;
 use ZnDomain\EntityManager\Interfaces\EntityManagerInterface;
-use ZnCore\Query\Entities\Query;
+use ZnDomain\Query\Entities\Query;
 
 class MyHistoryService extends BaseCrudService implements MyHistoryServiceInterface
 {

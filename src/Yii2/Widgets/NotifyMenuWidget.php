@@ -4,8 +4,8 @@ namespace ZnUser\Notify\Yii2\Widgets;
 
 use ZnUser\Notify\Domain\Enums\NotifyStatusEnum;
 use ZnUser\Notify\Domain\Interfaces\Services\MyHistoryServiceInterface;
-use ZnCore\Query\Entities\Where;
-use ZnCore\Query\Entities\Query;
+use ZnDomain\Query\Entities\Where;
+use ZnDomain\Query\Entities\Query;
 use ZnLib\Web\Widget\Base\BaseWidget2;
 
 class NotifyMenuWidget extends BaseWidget2

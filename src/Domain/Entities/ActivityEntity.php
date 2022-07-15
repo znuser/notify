@@ -5,8 +5,8 @@ namespace ZnUser\Notify\Domain\Entities;
 use DateTime;
 use Symfony\Component\Validator\Constraints as Assert;
 use Symfony\Component\Validator\Mapping\ClassMetadata;
-use ZnCore\Entity\Interfaces\EntityIdInterface;
-use ZnCore\Validation\Interfaces\ValidationByMetadataInterface;
+use ZnDomain\Entity\Interfaces\EntityIdInterface;
+use ZnDomain\Validator\Interfaces\ValidationByMetadataInterface;
 
 class ActivityEntity implements ValidationByMetadataInterface, EntityIdInterface
 {

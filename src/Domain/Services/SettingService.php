@@ -3,11 +3,11 @@
 namespace ZnUser\Notify\Domain\Services;
 
 use ZnCore\Collection\Interfaces\Enumerable;
-use ZnCore\Entity\Exceptions\NotFoundException;
+use ZnDomain\Entity\Exceptions\NotFoundException;
 use ZnDomain\EntityManager\Interfaces\EntityManagerInterface;
 use ZnDomain\EntityManager\Traits\EntityManagerAwareTrait;
-use ZnCore\Query\Entities\Query;
-use ZnCore\Query\Entities\Where;
+use ZnDomain\Query\Entities\Query;
+use ZnDomain\Query\Entities\Where;
 use ZnUser\Authentication\Domain\Interfaces\Services\AuthServiceInterface;
 use ZnUser\Notify\Domain\Entities\SettingEntity;
 use ZnUser\Notify\Domain\Interfaces\Repositories\SettingRepositoryInterface;

@@ -12,7 +12,7 @@ use ZnBundle\Notify\Domain\Entities\SmsEntity;
 use ZnBundle\Notify\Domain\Interfaces\Repositories\EmailRepositoryInterface;
 use ZnBundle\Notify\Domain\Interfaces\Repositories\SmsRepositoryInterface;
 use ZnDomain\EntityManager\Interfaces\EntityManagerInterface;
-use ZnCore\Query\Entities\Query;
+use ZnDomain\Query\Entities\Query;
 use ZnDomain\EntityManager\Traits\EntityManagerAwareTrait;
 use ZnDomain\Repository\Traits\RepositoryAwareTrait;
 
